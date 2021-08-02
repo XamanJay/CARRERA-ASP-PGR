@@ -1,0 +1,111 @@
+BODY {
+	MARGIN-TOP: 1em; BACKGROUND-IMAGE: none; BACKGROUND-COLOR: white
+}
+#main {
+	BACKGROUND-COLOR: white
+}
+#header {
+	WIDTH: 98%
+}
+#masthead H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 26pt; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H1.sitetitle A.resource:visited {
+	
+}
+#header A IMG {
+	DISPLAY: none
+}
+#searchbox {
+	DISPLAY: none
+}
+.motto {
+	DISPLAY: none
+}
+#otherstuff {
+	DISPLAY: none
+}
+#endlinks {
+	DISPLAY: none
+}
+.sectionbox {
+	FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+#main {
+	WIDTH: 98%
+}
+TD#content {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; WIDTH: 99%; COLOR: black; BORDER-TOP-STYLE: none; PADDING-TOP: 10px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+#navigation {
+	DISPLAY: none
+}
+#content P {
+	FONT-SIZE: 11pt; FONT-FAMILY: Georgia, Times New Roman, serif; TEXT-ALIGN: left
+}
+UL {
+	FONT-SIZE: 11pt; FONT-FAMILY: Georgia, Times New Roman, serif; TEXT-ALIGN: left
+}
+OL {
+	FONT-SIZE: 11pt; FONT-FAMILY: Georgia, Times New Roman, serif; TEXT-ALIGN: left
+}
+DL {
+	FONT-SIZE: 11pt; FONT-FAMILY: Georgia, Times New Roman, serif; TEXT-ALIGN: left
+}
+#content P.indent {
+	BORDER-RIGHT: gray 1px solid; BORDER-TOP: gray 1px solid; BORDER-LEFT: gray 1px solid; BORDER-BOTTOM: gray 1px solid
+}
+H1.maintitle {
+	FONT-WEIGHT: bold; MARGIN: 0.5em 0px 0px; FONT-FAMILY: sans-serif
+}
+H2.heading {
+	MARGIN-TOP: 10px
+}
+HR.blue {
+	MARGIN-TOP: 3px; MARGIN-BOTTOM: 3px
+}
+#footer {
+	DISPLAY: none
+}
+#content A {
+	FONT-FAMILY: Arial
+}
+A.nav2:link {
+	COLOR: black
+}
+A.nav2:visited {
+	COLOR: black
+}
+A#url {
+	TEXT-DECORATION: underline
+}
+.pagenavbox {
+	BORDER-RIGHT: black 2px dashed; BORDER-TOP: black 2px dashed; DISPLAY: none; BORDER-LEFT: black 2px dashed; BORDER-BOTTOM: black 2px dashed
+}
+H2.bg1 {
+	BACKGROUND-IMAGE: none
+}
+H2.bg2 {
+	BACKGROUND-IMAGE: none
+}
+H2.bg3 {
+	BACKGROUND-IMAGE: none
+}
+H2.bg4 {
+	BACKGROUND-IMAGE: none
+}
+STRONG {
+	COLOR: black
+}
+PRE.js {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+H1 {
+	FONT-WEIGHT: normal; FONT-FAMILY: Verdana
+}
+H2 {
+	FONT-WEIGHT: normal; FONT-FAMILY: Verdana
+}
+H3 {
+	FONT-WEIGHT: normal; FONT-FAMILY: Verdana
+}

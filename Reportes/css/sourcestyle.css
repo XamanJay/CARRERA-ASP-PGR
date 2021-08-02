@@ -1,0 +1,186 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: white; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: black; PADDING-TOP: 0px
+}
+A {
+	BACKGROUND: none transparent scroll repeat 0% 0%; TEXT-TRANSFORM: none; TEXT-DECORATION: underline
+}
+A:link {
+	COLOR: #0033cc
+}
+A:visited {
+	COLOR: #81b
+}
+A:active {
+	COLOR: #4682b4
+}
+A:hover {
+	COLOR: #9999ff
+}
+A.nav2 {
+	FONT-WEIGHT: bold
+}
+A.nav2:link {
+	COLOR: #554477; TEXT-DECORATION: underline
+}
+A.nav2:visited {
+	COLOR: #333399; TEXT-DECORATION: none
+}
+A.nav2:active {
+	COLOR: #cc3399
+}
+A.nav2:hover {
+	COLOR: #0066cc; TEXT-DECORATION: none
+}
+.upgrade {
+	DISPLAY: none
+}
+#searchbox FORM {
+	MARGIN: 0px
+}
+#searchbox STRONG STRONG {
+	TEXT-DECORATION: underline
+}
+.pathbar {
+	BORDER-RIGHT: silver 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: silver 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 3px; MARGIN: 10px 0px 5px; BORDER-LEFT: silver 0px solid; LINE-HEIGHT: 1.5; PADDING-TOP: 3px; BORDER-BOTTOM: silver 1px solid; LETTER-SPACING: -1px
+}
+.pathbar A {
+	WHITE-SPACE: nowrap
+}
+.pathtitle {
+	FONT-WEIGHT: bold; TEXT-TRANSFORM: uppercase; COLOR: #9900ff
+}
+.wellspaced LI {
+	MARGIN-TOP: 1.3em
+}
+.wellspaced DT {
+	MARGIN-TOP: 1.3em
+}
+H2.bg {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 40px; FONT-SIZE: 1em; PADDING-BOTTOM: 0px; COLOR: white; PADDING-TOP: 0px
+}
+H2.one {
+	BACKGROUND: url(media/heading.gif) #003399 no-repeat; MARGIN: 30px 0px
+}
+H2.two {
+	BACKGROUND: url(media/heading2.gif) #9999cc no-repeat; MARGIN: 0px
+}
+H2.three {
+	BACKGROUND: url(media/heading3.gif) #cccc99 no-repeat
+}
+H2.four {
+	BACKGROUND: url(media/heading4.gif) #33cc33 no-repeat
+}
+CODE {
+	FONT-SIZE: 0.9em; COLOR: #0033aa; FONT-FAMILY: Verdana, Courier, monospace
+}
+.js {
+	FONT-SIZE: 0.85em; COLOR: #cc0066; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+PRE.js {
+	BORDER-RIGHT: red 1px dashed; PADDING-RIGHT: 5px; BORDER-TOP: red 1px dashed; PADDING-LEFT: 12px; BACKGROUND: #fcf8ff; PADDING-BOTTOM: 5px; BORDER-LEFT: red 1px dashed; LINE-HEIGHT: 1.5em; PADDING-TOP: 5px; BORDER-BOTTOM: red 1px dashed
+}
+CODE.js {
+	WHITE-SPACE: nowrap
+}
+.css {
+	COLOR: green; FONT-FAMILY: Trebuchet MS
+}
+.cgi {
+	COLOR: #993399
+}
+PRE.cgi {
+	BORDER-RIGHT: #c6c 2px dotted; PADDING-RIGHT: 2em; BORDER-TOP: #c6c 2px dotted; PADDING-LEFT: 2em; FONT-SIZE: 1em; PADDING-BOTTOM: 2em; BORDER-LEFT: #c6c 2px dotted; PADDING-TOP: 2em; BORDER-BOTTOM: #c6c 2px dotted
+}
+.unix {
+	FONT-SIZE: 1.05em; COLOR: #889900; BORDER-BOTTOM: #cccc00 2px dotted
+}
+SAMP.eg {
+	FONT-SIZE: 0.9em; COLOR: #446; BORDER-BOTTOM: #aab 1px dashed; FONT-FAMILY: monospace; WHITE-SPACE: nowrap
+}
+.help {
+	CURSOR: help; COLOR: #444; BORDER-BOTTOM: #99cc00 1px dotted
+}
+DFN.help {
+	FONT-STYLE: italic
+}
+ACRONYM.help {
+	BORDER-LEFT-COLOR: #cc3399; BORDER-BOTTOM-COLOR: #cc3399; BORDER-TOP-COLOR: #cc3399; BORDER-RIGHT-COLOR: #cc3399
+}
+HR.blue {
+	MARGIN-TOP: 7px; BACKGROUND: #0033cc; MARGIN-BOTTOM: 7px; COLOR: #0033cc; HEIGHT: 3px; TEXT-ALIGN: center
+}
+HR.big {
+	MARGIN-TOP: -8px; HEIGHT: 5px
+}
+HR.white {
+	BORDER-TOP: white 1px solid; BACKGROUND: #ffffff; COLOR: white; HEIGHT: 1px
+}
+.sourcegray {
+	FONT-WEIGHT: bold; COLOR: #4444aa; FONT-STYLE: normal
+}
+DIV.futurewatch {
+	BORDER-RIGHT: #ff6666 2px dashed; PADDING-RIGHT: 15px; BORDER-TOP: #ff6666 2px dashed; PADDING-LEFT: 30px; BACKGROUND: #fffaff; PADDING-BOTTOM: 15px; MARGIN: 10px; BORDER-LEFT: #ff6666 2px dashed; PADDING-TOP: 15px; BORDER-BOTTOM: #ff6666 2px dashed
+}
+.futurewatch H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 1.2em; MARGIN-LEFT: -15px; COLOR: #f60; TEXT-DECORATION: underline
+}
+.futurewatch UL {
+	LIST-STYLE-TYPE: circle
+}
+.important {
+	BORDER-RIGHT: #33cc00 2px solid; PADDING-RIGHT: 10px; BORDER-TOP: #33cc00 2px solid; PADDING-LEFT: 20px; PADDING-BOTTOM: 10px; BORDER-LEFT: #33cc00 2px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #33cc00 2px solid
+}
+.important LEGEND {
+	FONT-WEIGHT: bold; COLOR: green
+}
+DIV.textad {
+	BORDER-RIGHT: black 2px dotted; PADDING-RIGHT: 3px; BORDER-TOP: black 2px dotted; PADDING-LEFT: 0px; FONT-SIZE: 11px; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 3px; BORDER-LEFT: black 2px dotted; COLOR: #666; PADDING-TOP: 4px; BORDER-BOTTOM: black 2px dotted; FONT-FAMILY: Verdana
+}
+.textad A.nav2 {
+	FONT-WEIGHT: normal
+}
+DIV.bookad {
+	BORDER-RIGHT: #090 2px dotted; PADDING-RIGHT: 4px; BORDER-TOP: #090 2px dotted; PADDING-LEFT: 4px; FONT-SIZE: 11px; BACKGROUND: #fff; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 4px; BORDER-LEFT: #090 2px dotted; COLOR: #666; PADDING-TOP: 4px; BORDER-BOTTOM: #090 2px dotted; FONT-FAMILY: Verdana
+}
+.bookad P {
+	MARGIN: 3px 0px
+}
+#adsense {
+	OVERFLOW: hidden
+}
+.symbol {
+	FONT: 1em Wingdings; COLOR: #00c
+}
+.xmp {
+	FONT-SIZE: 1.5em; COLOR: #000099
+}
+.script {
+	FONT-SIZE: 2em; COLOR: #0000ff; POSITION: relative; TOP: 7px
+}
+.music {
+	
+}
+A.books:link {
+	COLOR: #339900
+}
+A.books:visited {
+	COLOR: #339900
+}
+A.books:active {
+	
+}
+A.books:hover {
+	COLOR: #3b0
+}
+A.earthsource:link {
+	COLOR: green
+}
+A.earthsource:visited {
+	COLOR: teal
+}
+A.earthsource:active {
+	COLOR: black
+}
+A.earthsource:hover {
+	COLOR: navy
+}

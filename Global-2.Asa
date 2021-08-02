@@ -1,0 +1,171 @@
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+
+
+Sub Session_OnStart 
+	Session("UserID") = ""
+	Session("Password") = ""
+	
+	Dim Arreglo()
+	Session("Elementos") = Arreglo
+
+	Session("Contador") = 0
+	
+DIM Arreglo_CT_EstadodelBien(3)
+ Session("CT_EstadodelBien") = Arreglo_CT_EstadodelBien
+   
+  DIM Arreglo_CT_Asociacion(3)
+  Session("CT_Asociacion") = Arreglo_CT_Asociacion
+
+  DIM Arreglo_CT_ModoAdquisicion(3)
+  Session("CT_ModoAdquisicion") = Arreglo_CT_ModoAdquisicion
+
+  DIM Arreglo_CT_TipoBien(3)
+  Session("CT_TipoBien") = Arreglo_CT_TipoBien
+
+  DIM Arreglo_CT_BancoEmpresa(3)
+  Session("CT_BancoEmpresa") = Arreglo_CT_BancoEmpresa
+
+  DIM Arreglo_CT_TipoCuenta(3)
+  Session("CT_TipoCuenta") = Arreglo_CT_TipoCuenta
+  
+    DIM Arreglo_CT_Estado(3)
+  Session("CT_Estado") = Arreglo_CT_Estado
+  
+  DIM Arreglo_CT_Genero(2)
+  Session("CT_Genero") = Arreglo_CT_Genero
+
+  DIM Arreglo_CT_GradoMaximoEstudios(6)
+Session("CT_GradoMaximoEstudios") = Arreglo_CT_GradoMaximoEstudios
+
+  DIM Arreglo_CT_SituacionLaboral(2)
+  Session("CT_SituacionLaboral") = Arreglo_CT_SituacionLaboral
+  
+  DIM Arreglo_CT_PortacionArma(2)
+  Session("CT_PortacionArma") = Arreglo_CT_PortacionArma
+
+  DIM Arreglo_CT_DocumentoObtenido(2)
+  Session("CT_DocumentoObtenido") = Arreglo_CT_DocumentoObtenido
+
+ DIM Arreglo_CT_Nivel(3)
+  Session("CT_Nivel") = Arreglo_CT_Nivel
+
+  DIM Arreglo_CT_Parentesco(3)
+  Session("CT_Parentesco") = Arreglo_CT_Parentesco
+ 
+   DIM Arreglo_CT_EstadoCivil(2)
+  Session("CT_EstadoCivil") = Arreglo_CT_EstadoCivil
+
+  DIM Arreglo_CT_Gral_SFPcPerfilPsicologico(3)
+  Session("CT_Gral_SFPcPerfilPsicologico") = Arreglo_CT_Gral_SFPcPerfilPsicologico
+  
+  DIM Arreglo_CT_Gral_SFPcCompetenciasDLaboral(5)
+  Session("CT_Gral_SFPcCompetenciasDLaboral") = Arreglo_CT_Gral_SFPcCompetenciasDLaboral
+
+  
+  DIM Arreglo_CT_Boca(3)
+  Session("CT_Boca") = Arreglo_CT_Boca
+
+DIM Arreglo_CT_Cara(3)
+  Session("CT_Cara") = Arreglo_CT_Cara
+
+DIM Arreglo_CT_Cejas(3)
+  Session("CT_Cejas") = Arreglo_CT_Cejas
+
+DIM Arreglo_CT_ColorCabello(3)
+  Session("CT_ColorCabello") = Arreglo_CT_ColorCabello
+
+DIM Arreglo_CT_ColorTez(3)
+  Session("CT_ColorTez") = Arreglo_CT_ColorTez
+
+DIM Arreglo_CT_Complexion(3)
+  Session("CT_Complexion") = Arreglo_CT_Complexion
+
+DIM Arreglo_CT_Frente(3)
+  Session("CT_Frente") = Arreglo_CT_Frente
+
+DIM Arreglo_CT_Labios(3)
+  Session("CT_Labios") = Arreglo_CT_Labios
+
+
+DIM Arreglo_CT_Menton(3)
+  Session("CT_Menton") = Arreglo_CT_Menton
+
+DIM Arreglo_CT_Nariz(3)
+  Session("CT_Nariz") = Arreglo_CT_Nariz
+
+DIM Arreglo_CT_Ojos(3)
+  Session("CT_Ojos") = Arreglo_CT_Ojos
+
+DIM Arreglo_CT_Orejas(3)
+  Session("CT_Orejas") = Arreglo_CT_Orejas
+
+DIM Arreglo_CT_Baja(3)
+  Session("CT_Baja") = Arreglo_CT_Baja
+
+
+DIM Arreglo_CT_Estatus(3)
+  Session("CT_Estatus") = Arreglo_CT_Estatus
+
+DIM Arreglo_CT_Instituto(3)
+  Session("CT_Instituto") = Arreglo_CT_Instituto
+
+DIM Arreglo_CT_TipoVehiculo(3)
+  Session("CT_TipoVehiculo") = Arreglo_CT_TipoVehiculo
+
+DIM Arreglo_CT_Vehiculo(3)
+  Session("CT_Vehiculo") = Arreglo_CT_Vehiculo
+
+
+  DIM Arreglo_CT_Sexo(3)
+  Session("CT_Sexo") = Arreglo_CT_Sexo
+
+DIM Arreglo_CT_AptitudesFisicas(3)
+  Session("CT_AptitudesFisicas") = Arreglo_CT_AptitudesFisicas
+
+DIM Arreglo_CT_EvaluacionClinica(3)
+  Session("CT_EvaluacionClinica") = Arreglo_CT_EvaluacionClinica
+
+
+DIM Arreglo_CT_ExamenToxicologico(3)
+  Session("CT_ExamenToxicologico") = Arreglo_CT_ExamenToxicologico
+
+DIM Arreglo_SFPcCompetenciasDesempenoLaboral(3)
+  Session("CompetenciasDesempenoLaboral") = Arreglo_CompetenciasDesempenoLaboral
+
+DIM Arreglo_SFPcPerfilPsicologico(3)
+  Session("PerfilPsicologico") = Arreglo_PerfilPsicologico
+  
+  DIM Arreglo_CT_ReqAptitudesFisicas(2)
+  Session("CT_ReqAptitudesFisicas") = Arreglo_CT_ReqAptitudesFisicas
+
+DIM Arreglo_CT_ReqEvaluacionClinica(2)
+  Session("CT_ReqEvaluacionClinica") = Arreglo_CT_ReqEvaluacionClinica
+
+
+DIM Arreglo_CT_ReqExamenToxicologico(2)
+  Session("CT_ReqExamenToxicologico") = Arreglo_CT_ReqExamenToxicologico
+
+ DIM Arreglo_CT_REstadoCivil(3)
+ Session("CT_REstadoCivil") = Arreglo_CT_REstadoCivil
+
+
+'	=====================================================================================
+
+	
+
+End Sub
+
+
+	
+	
+Sub Session_OnEnd
+	Session("Contador") = 0
+End Sub
+
+
+'Sub Application_OnStart
+'End Sub
+
+'Sub Application_OnEnd
+'End Sub
+</SCRIPT>

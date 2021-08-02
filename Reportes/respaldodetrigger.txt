@@ -1,0 +1,49 @@
+CREATE TRIGGER [Calcar_tabla_Datospersonales] ON dbo.CARdDatosPersonales
+FOR INSERT
+
+
+ -- Este trigger  copiara   los registros de : CARdDatosPersonales   a:    CARdDatosPersonales_cap
+AS
+Begin
+
+BEGIN TRANSACTION CALCADO
+
+
+declare        @ultimo_ int,@Id_CARdDatosPersonales int, @Codigopostal int, @CT_Estado int,@CT_EstadoCivil int, @CT_Genero int, @CT_GradoMaximoEstudios int, @Id_CardEncargoActual int
+declare        @CARdDatosPersonales varchar(100), @RFC varchar(20), @ApellidoPaterno varchar(50), @ApellidoMaterno varchar(50), @Nombre varchar(50), @Calle_y_numero varchar(50),@Colonia varchar(50), @Email varchar(50), @Ciudad varchar(50), @Telefono varchar(50), @LugarNacimiento varchar(100), @CURP varchar(50), @Foto varchar(250)
+declare        @FechaNacimiento datetime 
+declare        @Autorizador bit 
+
+declare        @login_usuario varchar(100), @passsword varchar(100)
+
+               
+	              
+               
+SELECT @ultimo_ = @@IDENTITY 
+
+
+select @Id_CARdDatosPersonales = Id_CARdDatosPersonales, @CARdDatosPersonales = CARdDatosPersonales, @RFC = RFC, @ApellidoPaterno = ApellidoPaterno, @ApellidoMaterno =  ApellidoMaterno, @Nombre = Nombre, @Calle_y_numero = Calle_y_numero, @Colonia = Colonia, @CodigoPostal = CodigoPostal, @Email = Email, @Ciudad = Ciudad, @CT_Estado = CT_Estado, @Telefono = Telefono, @LugarNacimiento = LugarNacimiento, @FechaNacimiento = FechaNacimiento,  @CT_EstadoCivil  =  CT_EstadoCivil,  @CT_Genero = CT_Genero, @CURP = CURP, @CT_GradoMaximoEstudios = CT_GradoMaximoEstudios, @Foto = Foto, @Autorizador = Autorizador, @Id_CARdEncargoActual = Id_CARdEncargoActual
+   from CARdDatosPersonales where Id_CARdDatosPersonales = @ultimo_
+
+
+Set @login_usuario =  SUBSTRING(@Nombre, 1, 1) + @ApellidoPaterno
+
+Set  @passsword = SUBSTRING(@RFC,1,10)
+
+   
+    Insert Into CARdDatosPersonales_cap (Id_CARdDatosPersonales, CARdDatosPersonales, RFC, ApellidoPaterno, ApellidoMaterno, Nombre, Calle_y_numero, Colonia, CodigoPostal, Email, Ciudad, CT_Estado, Telefono, LugarNacimiento, FechaNacimiento, CT_EstadoCivil, CT_Genero, CURP, CT_GradoMaximoEstudios, Foto, Autorizador, Id_CARdEncargoActual, Login, Passsword )
+    Values (@Id_CARdDatosPersonales, @CARdDatosPersonales, @RFC, @ApellidoPaterno, @ApellidoMaterno, @Nombre, @Calle_y_numero, @Colonia, @CodigoPostal, @Email, @Ciudad, @CT_Estado, @Telefono, @LugarNacimiento, @FechaNacimiento, @CT_EstadoCivil, @CT_Genero, @CURP, @CT_GradoMaximoEstudios, @Foto, @Autorizador, @Id_CARdEncargoActual, @login_usuario, @passsword)
+
+COMMIT TRANSACTION CALCADO
+
+
+
+End
+
+
+
+
+
+
+
+

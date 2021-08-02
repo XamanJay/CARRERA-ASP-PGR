@@ -1,0 +1,123 @@
+BODY {
+	BACKGROUND: url(/media/pocketrocket.gif) #fffff3 fixed no-repeat right bottom; MARGIN: 10px; FONT-FAMILY: Verdana; TEXT-ALIGN: center
+}
+#header {
+	max-width: 1100px
+}
+#otherstuff {
+	max-width: 1100px
+}
+#main {
+	max-width: 1100px
+}
+#footer {
+	max-width: 1100px
+}
+#header {
+	CLEAR: both; BORDER-RIGHT: #c00 1px dotted; BORDER-TOP: #c00 1px dotted; BACKGROUND: #ffffe9; MARGIN: auto; BORDER-LEFT: #c00 1px dotted; WIDTH: 100%; BORDER-BOTTOM: #c00 1px dotted; TEXT-ALIGN: left
+}
+#masthead {
+	WIDTH: 65%
+}
+#masthead IMG {
+	DISPLAY: none
+}
+#masthead H1 A {
+	TEXT-DECORATION: none
+}
+#searchbox {
+	BORDER-RIGHT: #c00 1px dashed; PADDING-RIGHT: 10px; BORDER-TOP: #c00 1px dashed; PADDING-LEFT: 0px; BACKGROUND: #fffff6; PADDING-BOTTOM: 15px; MARGIN: 5px; BORDER-LEFT: #c00 1px dashed; PADDING-TOP: 0px; BORDER-BOTTOM: #c00 1px dashed; TEXT-ALIGN: right
+}
+H1.sitetitle {
+	FONT-SIZE: 32px; MARGIN: 12px 0px
+}
+.subtitle {
+	FONT-SIZE: 0.5em
+}
+.motto {
+	FONT-WEIGHT: bold
+}
+#otherstuff {
+	CLEAR: both; MARGIN: 10px auto; WIDTH: 100%; TEXT-ALIGN: center
+}
+#main {
+	BORDER-RIGHT: #c00 1px dotted; BORDER-TOP: #c00 1px dotted; BACKGROUND: #ffffe9; MARGIN: auto; BORDER-LEFT: #c00 1px dotted; WIDTH: 100%; BORDER-BOTTOM: #c00 1px dotted; FONT-FAMILY: Georgia; BORDER-COLLAPSE: separate; border-spacing: 1em
+}
+#navigation {
+	BORDER-RIGHT: #c00 1px dashed; BORDER-TOP: #c00 1px dashed; BACKGROUND: #fffff3; BORDER-LEFT: #c00 1px dashed; WIDTH: 210px; LINE-HEIGHT: 1.2; BORDER-BOTTOM: #c00 1px dashed; FONT-FAMILY: Verdana
+}
+#footer {
+	BORDER-RIGHT: #c00 1px dotted; BORDER-TOP: #c00 1px dotted; BACKGROUND: #ffffe9; MARGIN: 1em auto; BORDER-LEFT: #c00 1px dotted; BORDER-BOTTOM: #c00 1px dotted
+}
+#footer TD {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 6px; PADDING-TOP: 6px
+}
+#content {
+	BORDER-RIGHT: #c00 1px dashed; PADDING-RIGHT: 40px; BORDER-TOP: #c00 1px dashed; PADDING-LEFT: 40px; BACKGROUND: #fffffc; PADDING-BOTTOM: 70px; BORDER-LEFT: #c00 1px dashed; COLOR: #333; PADDING-TOP: 20px; BORDER-BOTTOM: #c00 1px dashed
+}
+#content P {
+	LINE-HEIGHT: 1.5
+}
+UL {
+	LINE-HEIGHT: 1.5
+}
+OL {
+	LINE-HEIGHT: 1.5
+}
+DL {
+	LINE-HEIGHT: 1.5
+}
+H1.maintitle {
+	FONT-WEIGHT: 400; FONT-SIZE: 40px; MARGIN: 10px; COLOR: #c30; FONT-FAMILY: Verdana
+}
+H2.heading {
+	FONT-WEIGHT: 400; FONT-SIZE: x-large; MARGIN-LEFT: -20px; COLOR: #f60; FONT-FAMILY: Verdana
+}
+H3.subhead {
+	FONT-WEIGHT: 400; FONT-SIZE: large; MARGIN-LEFT: -20px; WIDTH: 100%; COLOR: #ff3300; BORDER-BOTTOM: orange 0px solid; FONT-FAMILY: Verdana
+}
+H3.minorhead {
+	COLOR: #cc6600
+}
+P.code {
+	BORDER-RIGHT: #fcc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #fcc 1px solid; PADDING-LEFT: 5px; BACKGROUND: white; PADDING-BOTTOM: 5px; BORDER-LEFT: #fcc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #fcc 1px solid
+}
+.sourcetip {
+	BORDER-RIGHT: #edd 2px solid; PADDING-RIGHT: 1em; BORDER-TOP: #edd 2px solid; PADDING-LEFT: 1em; PADDING-BOTTOM: 4px; BORDER-LEFT: #edd 2px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #edd 2px solid
+}
+.compatibility {
+	BORDER-RIGHT: #c99 1px solid; PADDING-RIGHT: 1em; BORDER-TOP: #c99 1px solid; PADDING-LEFT: 1em; PADDING-BOTTOM: 4px; BORDER-LEFT: #c99 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #c99 1px solid
+}
+HR.blue {
+	BACKGROUND: #c00; COLOR: #c00
+}
+INPUT.searchbox {
+	BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BORDER-LEFT: black 2px solid; WIDTH: 150px; BORDER-BOTTOM: black 2px solid
+}
+INPUT.searchbox:unknown {
+	BACKGROUND-COLOR: #fffff0
+}
+INPUT.button {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: bold; BORDER-LEFT: black 1px solid; COLOR: white; BORDER-BOTTOM: black 1px solid; BACKGROUND-COLOR: #c00
+}
+BUTTON.stylissimo {
+	BACKGROUND: #ff6600; MARGIN: 4px; WIDTH: 70%; COLOR: white
+}
+.stylissimo STRONG {
+	FONT-WEIGHT: normal; TEXT-DECORATION: underline
+}
+A {
+	FONT-WEIGHT: bold
+}
+A:link {
+	COLOR: #c00
+}
+A:visited {
+	COLOR: #936
+}
+A:active {
+	COLOR: #000
+}
+A:hover {
+	COLOR: #f60
+}

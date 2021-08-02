@@ -1,0 +1,47 @@
+<xml xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+ xmlns:rs="urn:schemas-microsoft-com:rowset" xmlns:z="#RowsetSchema">
+ <x:PivotCache>
+  <x:CacheIndex>1</x:CacheIndex>
+  <s:Schema id="RowsetSchema">
+   <s:ElementType name="row" content="eltOnly">
+    <s:attribute type="Col1"/>
+    <s:attribute type="Col2"/>
+    <s:attribute type="Col3"/>
+    <s:attribute type="Col4"/>
+    <s:extends type="rs:rowbase"/>
+   </s:ElementType>
+   <s:AttributeType name="Col1" rs:name="Campo1">
+    <s:datatype dt:maxLength="255"/>
+   </s:AttributeType>
+   <s:AttributeType name="Col2" rs:name="Campo2">
+    <s:datatype dt:maxLength="255"/>
+   </s:AttributeType>
+   <s:AttributeType name="Col3" rs:name="Campo3">
+    <s:datatype dt:maxLength="255"/>
+   </s:AttributeType>
+   <s:AttributeType name="Col4" rs:name="Campo4">
+    <s:datatype dt:maxLength="255"/>
+   </s:AttributeType>
+  </s:Schema>
+  <rs:data>
+   <z:row Col1="DimStatusInstituto" Col2="All DimStatusInstituto"/>
+   <z:row/>
+   <z:row Col1="Unidad" Col2="Carc Instituto"/>
+   <z:row Col1="Carc Adscripciones" Col2="INACIPE" Col3="SIN INSTITUTO"
+    Col4="Total general"/>
+   <z:row Col1="BAJA CALIFORNIA" Col2="3" Col4="3"/>
+   <z:row Col1="CAMPECHE" Col3="1" Col4="1"/>
+   <z:row Col1="DIRECCIÓN GENERAL DE COOPERACIÓN  INTERNACIONAL" Col3="1"
+    Col4="1"/>
+   <z:row Col1="QUERÉTARO" Col3="1" Col4="1"/>
+   <z:row Col1="SIN ADSCRIPCION" Col2="2" Col3="70" Col4="72"/>
+   <z:row Col1="TAMAULIPAS" Col2="2" Col4="2"/>
+   <z:row
+    Col1="UNIDAD ESPECIALIZADA EN INVESTIGACIÓN DE DELITOS CONTRA  LOS DERECHOS DE AUTOR Y LA PROPIEDAD INDUSTRIAL"
+    Col3="1" Col4="1"/>
+   <z:row Col1="Total general" Col2="7" Col3="74" Col4="81"/>
+  </rs:data>
+ </x:PivotCache>
+</xml>

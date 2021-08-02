@@ -1,0 +1,77 @@
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+
+
+Sub Session_OnStart 
+
+	'*** Bandera de acceso correcto ***
+	Session("FlagConn") = 0
+	'***
+	
+	'*** Usuario Login ***
+	Session("UserLogin") = ""
+	Session("IdLogin") = ""
+	'***
+
+	Session("UserID") = ""
+	Session("Password") = ""
+	
+	Session("LoginAutorizacion") = ""
+	Session("LoginAutorizacionArea") = ""
+	Session("IP_SERVER") = request.ServerVariables("HTTP_HOST")
+	Session("IP_DATOS") = request.ServerVariables("HTTP_HOST")
+	Dim Arreglo()
+	Session("Elementos") = Arreglo
+	Session("Contador") = 0   
+    Dim Arreglo_Id_CAPcRespuestasPermitidas()
+	Session("Id_CAPcRespuestasPermitidas") = Arreglo_Id_CAPcRespuestasPermitidas
+	'=-=-=-=JVI=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	
+	Session("Subprocuraduria") = ""
+	Session("Delegacion") = ""
+	Session("Subsede") = ""
+
+
+ 'IP_SERVER = Request.ServerVariables("SERVER_NAME")   
+
+  ' Session("IP_SERVER") = IP_SERVER
+   
+   DSN = "CarreraPGR" 
+   SESSION("DSN") = DSN
+'   SESSION("ODBC") = "SIIFP"
+'   SESSION("ODBC") = "SIIFP_DATOSOK"
+
+'=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+	
+
+	Session("NombreUsuario") = ""
+	
+	DIM Arreglo_CAPcCuestContCurso
+	Session("CAPcCuestContCurso") = Arreglo_CAPcCuestContCurso
+	
+	DIM Arreglo_CAPcCuestInstServ
+	Session("CAPcCuestInstServ") = Arreglo_CAPcCuestInstServ
+
+	DIM Arreglo_CAPcCuestInstructor
+	Session("CAPcCuestInstructor") = Arreglo_CAPcCuestInstructor
+
+'---------------------------------------------------------------------------------------------------------------------------------
+
+	DIM Arreglo_CAPdCuestPostCap_Bloq1
+	Session("CAPdCuestPostCap_Bloq1") = Arreglo_CAPdCuestPostCap_Bloq1
+
+	DIM Arreglo_CAPdCuestPostCap_Bloq2
+	Session("CAPdCuestPostCap_Bloq2") = Arreglo_CAPdCuestPostCap_Bloq2
+
+	DIM Arreglo_CAPdCuestPostCap_Bloq3
+	Session("CAPdCuestPostCap_Bloq3") = Arreglo_CAPdCuestPostCap_Bloq3
+				
+End Sub
+	
+Sub Session_OnEnd
+	Session("Contador") = 0
+End Sub
+
+
+
+</SCRIPT>

@@ -1,0 +1,46 @@
+CREATE TRIGGER [Actualiza_Avance_Indicador_a_Datos_Indicador] ON [dbo].[INDcAvance_Indicadores] 
+FOR UPDATE
+AS
+------Este trigger actualiza los datos de Avances Indicador a Datos indicador
+Begin
+BEGIN TRANSACTION CALCADO_IND
+declare        @ultimo_ int, @Id_INDcAvance_Indicadores int, @INDcAvance_Indicadores int, @Id_INDcIndicadoresDesglose int, @Id_INDcEstado int, @Id_INDcMes int, @anio int
+declare        @Comentarios varchar(8000), @CveMiembroInd varchar (50)
+declare        @Fecha datetime 
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+SELECT @ultimo_ = Id_INDcAvance_Indicadores FROM inserted
+
+select @Id_INDcAvance_Indicadores = Id_INDcAvance_Indicadores, @INDcAvance_Indicadores = INDcAvance_Indicadores, 
+          @Id_INDcIndicadoresDesglose = Id_INDcIndicadoresDesglose, @Id_INDcEstado = Id_INDcEstado,  @Comentarios =  Comentarios,
+          @Id_INDcMes = Id_INDcMes, @anio = anio, @fecha = fecha
+   from INDcAvance_Indicadores where Id_INDcAvance_Indicadores = @ultimo_
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+select  @CveMiembroInd = INDcIndicadores.INDcCveMiembInd_Num from INDcIndicadores where Id_INDcIndicadores
+ in (select Id_INDcIndicadores from INDcIndicadoresDesglose
+	where  dbo.INDcIndicadoresDesglose.Id_INDcIndicadoresDesglose = @Id_INDcIndicadoresDesglose)
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+   Insert Into Datos_Indicador (Mes, Anio, Fecha, CveOrganiza, CveMiembroInd, Metrica)
+    Values  (@Id_INDcMes, @anio,  @fecha, @Id_INDcEstado, @CveMiembroInd, @INDcAvance_Indicadores)
+------------------------------------------------------------------------------------------------------------------------------------------------------
+ IF @@ERROR <> 0
+      BEGIN
+        ROLLBACK TRANSACTION CALCADO_IND
+   --  RETURN 1  
+     END 
+------------------
+COMMIT TRANSACTION CALCADO_IND
+END
+
+
+
+
+

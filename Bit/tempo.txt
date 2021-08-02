@@ -1,0 +1,1 @@
+ <%=Record_Main_andColor("Id_PLAdPersonas") %>- <%=Record_Main_andColor("Id_PLAdListas")%> - <%=Record_Main_andColor("Observa") %>- <%=Record_Main_andColor("Asistio")%></TD>

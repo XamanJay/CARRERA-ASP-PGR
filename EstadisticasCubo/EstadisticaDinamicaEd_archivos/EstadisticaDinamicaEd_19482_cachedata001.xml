@@ -1,0 +1,49 @@
+<xml xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+ xmlns:rs="urn:schemas-microsoft-com:rowset" xmlns:z="#RowsetSchema">
+ <x:PivotCache>
+  <x:CacheIndex>1</x:CacheIndex>
+  <s:Schema id="RowsetSchema">
+   <s:ElementType name="row" content="eltOnly">
+    <s:attribute type="Col1"/>
+    <s:attribute type="Col2"/>
+    <s:attribute type="Col3"/>
+    <s:attribute type="Col4"/>
+    <s:attribute type="Col5"/>
+    <s:extends type="rs:rowbase"/>
+   </s:ElementType>
+   <s:AttributeType name="Col1" rs:name="Campo1">
+    <s:datatype dt:maxLength="255"/>
+   </s:AttributeType>
+   <s:AttributeType name="Col2" rs:name="Campo2">
+    <s:datatype dt:maxLength="255"/>
+   </s:AttributeType>
+   <s:AttributeType name="Col3" rs:name="Campo3">
+    <s:datatype dt:maxLength="255"/>
+   </s:AttributeType>
+   <s:AttributeType name="Col4" rs:name="Campo4">
+    <s:datatype dt:maxLength="255"/>
+   </s:AttributeType>
+   <s:AttributeType name="Col5" rs:name="Campo5">
+    <s:datatype dt:maxLength="255"/>
+   </s:AttributeType>
+  </s:Schema>
+  <rs:data>
+   <z:row/>
+   <z:row Col1="DimAdscripciones" Col2="(Varios elementos)"/>
+   <z:row/>
+   <z:row Col1="Unidad" Col2="Status Ing Egr"/>
+   <z:row Col1="Carc Categoria" Col2="EGRESO" Col3="INGRESO" Col4="SIN STATUS"
+    Col5="Total general"/>
+   <z:row Col1="1ER COMANDANTE" Col4="1" Col5="1"/>
+   <z:row Col1="FISCAL COORDINADOR" Col4="1" Col5="1"/>
+   <z:row Col1="FISCAL EJECUTIVO" Col2="1" Col3="1" Col4="6" Col5="8"/>
+   <z:row Col1="FISCAL JEFE" Col4="1" Col5="1"/>
+   <z:row Col1="FISCAL SUPERVISOR" Col2="1" Col4="1" Col5="2"/>
+   <z:row Col1="INVESTIGADOR" Col4="1" Col5="1"/>
+   <z:row Col1="SIN CATEGORIA" Col2="1" Col4="62" Col5="63"/>
+   <z:row Col1="Total general" Col2="3" Col3="1" Col4="73" Col5="77"/>
+  </rs:data>
+ </x:PivotCache>
+</xml>

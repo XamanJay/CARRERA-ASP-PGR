@@ -1,0 +1,1 @@
+<input type="button" name="Enviarparametros" value="GRABAR" onClick="location.href='PA_Grabacionde_OBSERVACIONES_LISTAS_1x1.asp?Id_PLAdPersonas=<%=Record_Main_andColor("Id_PLAdPersonas")%>&Id_PLAdListas=<%=Record_Main_andColor("Id_PLAdListas")%>&Observa=Id_PLAdPersonas_<%=Record_Main_andColor("Id_PLAdPersonas")%>&Asistio=Asistencia_<%=Record_Main_andColor("Id_PLAdPersonas")%>&'">

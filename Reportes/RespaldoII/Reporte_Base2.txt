@@ -1,0 +1,16 @@
+		 PROCURADURIA GENERAL DE LA REPÚBLICA
+ 	COORDINACIÓN DE PLANEACIÓN, DESARROLLO E INNOVACIÓN INSTITUCIONAL
+		DIRECCIÓN GENERAL DE FORMACIÓN PROFESIONAL
+
+Lugar	                   <Lugar>
+Instalaciones              <Instalaciones>
+Nombre del curso           <curso>
+Instructor	           <Instructor>
+Institucion que imparte	   <Institucion>
+Periodo del curso    del:  <Periodo1> al: <Periodo2>
+Horario		           <Horario>	
+
+
+----------------------------------------------------------------------------------
+<opcion>
+
