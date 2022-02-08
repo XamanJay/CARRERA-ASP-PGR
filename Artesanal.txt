@@ -1,0 +1,249 @@
+<HTML> 
+ <BODY  BGCOLOR = "#00003C"> 
+  <SCRIPT LANGUAGE="JavaScript" SRC="calendario.js"> </SCRIPT> 
+ 
+<!--- ------------------------------------------------------------------------------------------------------------------ --->   
+  <CENTER> 
+ 
+  <FIELDSET STYLE="padding: 2; width:900; height:0">        
+   
+   <HR WIDTH=40%> 
+    <FONT COLOR="#FFFFFF"> <H2> Altas de DATOS PERSONALES DEL PERSONAL DE LA PGR </H2> </FONT> 
+   <HR WIDTH=40%>    
+   <BR><BR><BR> 
+    
+   <LEGEND> 
+    <B> 
+     <FONT COLOR="#FFFFFF"> <H3> Captura de DATOS PERSONALES DEL PERSONAL DE LA PGR </H3> </FONT> 
+    </B> 
+   </LEGEND> 
+<!--- ------------------------------------------------------------------------------------------------------------------ ---> 
+  <FORM METHOD="post" ACTION="AltasOpr.asp" NAME= "FormVehiAltas"> 
+   
+ 
+  <% 
+   SET Ob_Conn = SERVER.CREATEOBJECT("ADODB.CONNECTION") 
+   SET Ob_RS1   = SERVER.CREATEOBJECT("ADODB.RECORDSET") 
+    
+   Ob_Conn.PROVIDER="sqloledb" 
+   Ob_Conn.OPEN="SERVER=GC_SERVIDOR;DATABASE=GC_BASEDEDATOS;UID=Session("UserID");PWD=Session("Password")"     
+  %> 
+ 
+ 
+<!--- --------------------------------------------------------------------------------------------------------------- ---> 
+   <TABLE border="0" CELLPADDING="0" CELLSPACING="0" STYLE="border-collapse: collapse" BORDERCOLOR="#111111" ID="AutoNumber1" HEIGHT="260"> 
+<!--- --------------------------------------------------------------------------------------------------------------- ---> 
+    
+<!--- Input Text --------------------------------------------------------------------------------------------------------------- ---> 
+
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> Comentario: <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <TEXTAREA NAME="CARdDatosPersonales" SIZE=10 ROWS=5 COLS=23> </TEXTAREA> 
+      </TD> 
+    </TR> 
+
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> RFC: <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="RFC" SIZE="30"  MAXLENGTH="30"> 
+      </TD> 
+    </TR>
+
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> Apellido paterno: <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="ApellidoPaterno" SIZE="30"  MAXLENGTH="30"> 
+      </TD> 
+    </TR>
+
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> Apellido materno: <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="ApellidoMaterno" SIZE="30"  MAXLENGTH="30"> 
+      </TD> 
+    </TR>
+
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> Nombre(s): <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="Nombre" SIZE="30"  MAXLENGTH="30"> 
+      </TD> 
+    </TR>
+
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> Domicilio (calle y número): <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="Calle_y_numero" SIZE="30"  MAXLENGTH="30"> 
+      </TD> 
+    </TR>
+
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> Colonia: <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="Colonia" SIZE="30"  MAXLENGTH="30"> 
+      </TD> 
+    </TR>
+
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> Código postal: <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="CodigoPostal" SIZE="30"  MAXLENGTH="30"> 
+      </TD> 
+    </TR>
+
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> Ciudad: <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="Ciudad" SIZE="30"  MAXLENGTH="30"> 
+      </TD> 
+    </TR>
+
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> Estado: <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="CT_Estado" SIZE="30"  MAXLENGTH="30"> 
+      </TD> 
+    </TR>
+
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> Teléfono: <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="Telefono" SIZE="30"  MAXLENGTH="30"> 
+      </TD> 
+    </TR>
+
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> Lugar de nacimiento: <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="LugarNacimiento" SIZE="30"  MAXLENGTH="30"> 
+      </TD> 
+    </TR>
+
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> Fecha de nacimiento: <BR> </FONT> </B> 
+      </TD> 
+      <TD>
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="FechaNacimiento" SIZE="30"  MAXLENGTH="30" READONLY> 
+	  <IMG ONCLICK="window_open('FormVehiAltas','FechaNacimiento')" border="0" src="<%= ruta_img_calendario%>" WIDTH="32" HEIGHT="34"> 
+      </TD> 
+    </TR> 
+
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> Estado civil: <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="EstadoCivil" SIZE="30"  MAXLENGTH="30"> 
+      </TD> 
+    </TR>
+
+<!--- Catálogo Género--->
+
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> CURP: <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="CURP" SIZE="30"  MAXLENGTH="30"> 
+      </TD> 
+    </TR>
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> GC_CAMPO_ETIQUETA_MODO4 <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<%sql1 = "SELECT * FROM GC_CAMPO_NOMBRE_MODO4 ORDER BY GC_CAMPO_ORDENACION_MODO4" Ob_RS1.Open sql1, Ob_Conn%> 
+        <SELECT NAME="ComboBox_GC_CAMPO_NOMBRE_MODO4" SIZE=1> 
+	  <OPTION VALUE=""> Ninguno </OPTION> 
+
+	  <%DO UNTIL Ob_RS1.EOF%> 
+	    <OPTION VALUE="<%=Ob_RS1(0)%>"> 
+	      <%= Ob_RS1(1)%> 
+	    </OPTION> 
+	    <%Ob_RS1.MOVENEXT 
+	  LOOP%> 
+	</SELECT> 
+	<%Ob_RS1.CLOSE%> 
+      </TD> 
+      <TD> 
+        <INPUT TYPE='button' NAME='Boton_GC_CAMPO_NOMBRE_MODO4' VALUE=' ... ' ONCLICK="location.href='Altas_GC_CAMPO_NOMBRE_MODO4.ASP'"  STYLE="float: LEFT"> 
+      </TD> 
+    </TR>  
+<!--- --------------------------------------------------------------------------------------------------------------- ---> 
+ 
+   </TABLE> 
+  
+   <P ALIGN="CENTER">  
+   
+   <INPUT TYPE="submit" VALUE="Enviar" NAME="B1">  
+   <INPUT TYPE="reset" VALUE="Restablecer" NAME="B2">  
+ 
+  </FORM> 
+  </FIELDSET> 
+   
+  </CENTER> 
+   
+  <%  
+   SET Ob_RS1 = NOTHING 
+   SET Ob_Conn = NOTHING   
+  %> 
+   
+ </BODY> 
+</HTML>     
