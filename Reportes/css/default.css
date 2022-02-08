@@ -1,0 +1,54 @@
+BODY {
+	BACKGROUND: white; COLOR: black
+}
+DIV.example {
+	WIDTH: 100%; COLOR: black
+}
+DIV.dtd-example {
+	WIDTH: 100%; COLOR: black
+}
+TT.example {
+	MARGIN-LEFT: 1em; COLOR: maroon
+}
+PRE {
+	MARGIN-LEFT: 1em; COLOR: maroon
+}
+DIV.dtd-fragment {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; WIDTH: 100%; BORDER-BOTTOM: medium none; BACKGROUND-COLOR: #eee
+}
+PRE.dtd-fragment {
+	MARGIN-LEFT: 0px
+}
+PRE.dtd {
+	MARGIN-LEFT: 0px; COLOR: black
+}
+DIV.illegal-example {
+	BORDER-RIGHT: red solid; BORDER-TOP: red solid; BORDER-LEFT: red solid; WIDTH: 100%; COLOR: red; BORDER-BOTTOM: red solid
+}
+DIV.illegal-example P {
+	COLOR: black
+}
+DIV.deprecated-example {
+	BORDER-RIGHT: rgb(255,165,0) solid; BORDER-TOP: rgb(255,165,0) solid; BORDER-LEFT: rgb(255,165,0) solid; WIDTH: 100%; COLOR: red; BORDER-BOTTOM: rgb(255,165,0) solid
+}
+DIV.deprecated-example P {
+	COLOR: black
+}
+DIV.note {
+	MARGIN-LEFT: 1em; COLOR: green
+}
+P.note {
+	MARGIN-LEFT: 1em; COLOR: green
+}
+UL.toc {
+	LIST-STYLE-TYPE: none
+}
+A.normref {
+	COLOR: red
+}
+A.informref {
+	COLOR: green
+}
+DIV.subtoc {
+	BORDER-RIGHT: thin solid; PADDING-RIGHT: 1em; BORDER-TOP: thin solid; PADDING-LEFT: 1em; BACKGROUND: #ddd; PADDING-BOTTOM: 1em; MARGIN: 1em 0px; BORDER-LEFT: thin solid; PADDING-TOP: 1em; BORDER-BOTTOM: thin solid
+}
