@@ -1,0 +1,27 @@
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+
+
+Sub Session_OnStart 
+	Session("UserID") = ""
+	Session("Password") = ""
+	
+	Dim Arreglo()
+	Session("Elementos") = Arreglo
+
+	Session("Contador") = 0
+End Sub
+
+
+	
+	
+Sub Session_OnEnd
+	Session("Contador") = 0
+End Sub
+
+
+'Sub Application_OnStart
+'End Sub
+
+'Sub Application_OnEnd
+'End Sub
+</SCRIPT>

@@ -1,0 +1,81 @@
+<!--- Input Text --------------------------------------------------------------------------------------------------------------- ---> 
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> RFC: <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="RFC" SIZE="30"  MAXLENGTH="30"> 
+      </TD> 
+    </TR>
+<!--- --------------------------------------------------------------------------------------------------------------- ---> 
+
+<!--- Input TextArea--------------------------------------------------------------------------------------------------------------- ---> 
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> GC_CAMPO_ETIQUETA_MODO2 <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <TEXTAREA NAME="TextArea_GC_CAMPO_NOMBRE_MODO2" SIZE=10 ROWS=5 COLS=23> </TEXTAREA> 
+      </TD> 
+    </TR> 
+<!--- --------------------------------------------------------------------------------------------------------------- ---> 
+ 
+<!--- Fecha --------------------------------------------------------------------------------------------------------------- ---> 
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> GC_CAMPO_ETIQUETA_MODO3 <BR> </FONT> </B> 
+      </TD> 
+      <TD>
+	<P ALIGN="LEFT"> 
+	  <INPUT TYPE="TEXT" NAME="InputBox_GC_CAMPO_NOMBRE_MODO3" SIZE="30"  MAXLENGTH="30" READONLY> 
+	  <IMG ONCLICK="window_open('FormVehiAltas','GC_CAMPO_NOMBRE_MODO3')" border="0" src="<%= ruta_img_calendario%>" WIDTH="32" HEIGHT="34"> 
+      </TD> 
+    </TR>     
+<!--- --------------------------------------------------------------------------------------------------------------- ---> 
+ 
+<!--- Catalogo --------------------------------------------------------------------------------------------------------------- ---> 
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> GC_CAMPO_ETIQUETA_MODO4 <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	<%sql1 = "SELECT * FROM GC_CAMPO_NOMBRE_MODO4" Ob_RS1.Open sql1, Ob_Conn%> 
+        <SELECT NAME="cbxGC_CAMPO_NOMBRE_MODO4" SIZE=1> 
+	  <OPTION VALUE=""> Ninguno </OPTION> 
+
+	  <%DO UNTIL Ob_RS1.EOF%> 
+	    <OPTION VALUE="<%=Ob_RS1(0)%>"> 
+	      <%= Ob_RS1(1)%> 
+	    </OPTION> 
+	    <%Ob_RS1.MOVENEXT 
+	  LOOP%> 
+	</SELECT> 
+	<%Ob_RS1.CLOSE%> 
+      </TD> 
+      <TD> 
+        <INPUT TYPE='button' NAME='Boton_GC_CAMPO_NOMBRE_MODO4' VALUE=' ... ' ONCLICK="location.href='Altas_GC_CAMPO_NOMBRE_MODO4.ASP'"  STYLE="float: LEFT"> 
+      </TD> 
+    </TR>      
+<!--- --------------------------------------------------------------------------------------------------------------- ---> 
+
+
+<!--- Catalogo personalizado --------------------------------------------------------------------------------------------------------------- ---> 
+    <TR> 
+      <TD> 
+	<P ALIGN="LEFT"> 
+	  <B> <FONT COLOR="#FFFFFF"> Género: <BR> </FONT> </B> 
+      </TD> 
+      <TD> 
+	       <SELECT NAME= <%= "cbxCARdDatosPersonales" %> SIZE=1>
+		         <OPTION> Masculino </OPTION>
+		         <OPTION> Femenino </OPTION>
+	       </SELECT>
+      </TD> 
+    <TR> 
+<!--- --------------------------------------------------------------------------------------------------------------- ---> 
