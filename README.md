@@ -1,0 +1,9 @@
+# CARRERA-ASP-PGR
+
+DIRECCIÓN GENERAL DEL SERVICIO DE CARRERA DE 
+PROCURACIÓN DE JUSTICIA FEDERAL MEXICO PGR [FGR]
+
+Sistema Institucional del Registro de Personal 
+Sustantivo
+
+
